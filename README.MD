@@ -109,3 +109,35 @@ resize image
         <td>X</td>
 </table>
 ```
+
+## Lists (Bullet points)
+```
+<ul> <!--unordered list-->
+    <li>bullet point 1</li>
+    <li>bullet point 2</li>
+    <li>bullet point 3</li>
+</ul>
+
+<ol> <!--ordered list-->
+    <li>bullet point 1</li>
+    <li>bullet point 2</li>
+    <li>bullet point 3</li>
+</ol>
+```
+
+# CSS
+must be at head
+```
+    <head>
+        <!--css style must be at head-->
+        <style type="text/css"> 
+            p {
+                color: rgb(223, 75, 30);
+               font-family:Arial;
+               } 
+        </style><!-- p tage become new color-->
+        <title>
+            first web title
+        </title>
+    </head>
+```
