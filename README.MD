@@ -134,6 +134,7 @@ must be at head
             p {
                 color: rgb(223, 75, 30);
                font-family:Arial;
+               line-height: 170%;
                } 
         </style><!-- p tage become new color-->
         <title>
@@ -141,3 +142,69 @@ must be at head
         </title>
     </head>
 ```
+
+## css bald and iterlisize
+```
+    ul{
+        font-weight:bold;
+    }
+    ol{
+        font-style: italic;
+    }
+```
+
+## text location
+center
+```
+h1{
+    color: orangered;
+    text-align:center;
+}
+```
+
+indent
+```
+p {
+    color: rgb(223, 75, 30);
+    font-family:Arial;
+    line-height: 170%;
+    text-indent: 25px;
+    } 
+```
+
+## background color
+```
+        <style type="text/css">
+            body{
+                background-color: rgb(100,100,100);
+                color:white; <!-- change all color except the one menully changed in HTML-->
+            } 
+        </style>
+```
+## backgroud image
+```
+<style type="text/css">
+body{
+        background-image: url(la.jpg);
+
+        background-repeat: no-repeat;
+        background-repeat: repeat-x;
+        /* shift 30px to the right 60px down */
+        background-position: 60px 100px;
+        background-position: 50% 50%;
+    }
+</style>
+```
+
+## text paddings
+```
+            h1{
+                color: orangered;
+                text-align:center;
+                /* padding background color */
+                background-color: pink; 
+                padding:20px;
+                padding-bottom:70px;
+            }
+```
+## border
