@@ -3,6 +3,8 @@ https://www.youtube.com/watch?v=y3UH2gAhwPI
 
 https://www.youtube.com/user/thenewboston
 
+http://www.w3school.com.cn/tags/tag_doctype.asp
+
 # tags
 <p> praragraph
 <img> image
@@ -54,7 +56,7 @@ or use line break
 and horizontal rule ```<hr/>```
 
 ## basic style
-### bald
+### bold
 ```
     <strong>PFLAG China</strong>
 ```
@@ -124,6 +126,12 @@ resize image
     <li>bullet point 3</li>
 </ol>
 ```
+## Span to affect part of text
+```
+<p> <span>Chunyu meetings</span> locally Chunyu meetings locallyChunyu meetings locallyChunyu meetings locallyChunyu meetings locally
+            Chunyu meetings locallyChunyu meetings locally</p>
+```
+
 
 # CSS
 must be at head
@@ -143,7 +151,7 @@ must be at head
     </head>
 ```
 
-## css bald and iterlisize
+## css bold and iterlisize
 ```
     ul{
         font-weight:bold;
@@ -208,3 +216,17 @@ body{
             }
 ```
 ## border
+```
+        border-color:aquamarine;
+        border-width: 5px;
+        border-style: groove;
+        border-top-style: inherit;
+```
+# Style sheet
+in folder create .css file
+
+then in every page of HTML's head out side style tag
+```
+<link rel="stylesheet" type = "text/css" href="filename.css"/>
+```
+

@@ -2,26 +2,33 @@
 
 <html> <!-- a comment of start of this file -->
     <head>
+    <link rel="stylesheet" type = "text/css" href="style_sheet.css"/>
         <!--css style must be at head-->
         <style type="text/css">
+        
+
             body{
                 background-color: rgb(100,100,100);
                 color:white;
                  /* <!-- change all color except the one menully changed in HTML--> */
                 background-image: url(la.jpg);
+                background-size: 100%;
                 background-repeat: no-repeat;
                 background-repeat: repeat-x;
                 /* shift 30px to the right 60px down */
                 background-position: 60px 100px;
-                background-position: 50% 50%;
+                background-position: 50% 100%;
             } 
             p {
                 color: rgb(223, 75, 30);
                font-family:Arial;
                line-height: 170%;
                text-indent: 25px;
+               /* the margin between different p tags */
+               margin: 30px; 
+
                } 
-            h1{
+            h1, span{
                 color: orangered;
                 text-align:center;
                 /* padding background color */
@@ -29,9 +36,12 @@
                 padding:20px;
                 padding-bottom:70px;
                 border-color:aquamarine;
-                border-width: 5
-                px;
+                border-width: 5px;
                 border-style: groove;
+                border-top-style: inherit;
+                width: 300px;
+                height: 300px;
+                border: 3px orange dotted;
             }
             ul{
                 font-weight:bold;
@@ -39,7 +49,54 @@
             ol{
                 font-style: italic;
             }
-        </style><!-- p tage become new color-->
+            a:link{
+                color:red;
+                    }
+            a:visited{
+                color: rgb(192, 223, 192);
+            }
+            a:hover{
+                background-color: bisque;
+                color: blueviolet;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            table{
+                border: 1px solid black;
+            }
+            tr{
+                
+                background-color: brown;
+            }
+            td{
+                border: 1px solid black;
+            }
+            ul{
+                list-style-type:upper-roman;
+                /* list-style-image: url(la.jpg) ; */
+                /* padding: 0%; */
+            
+            }
+            div{
+                border: 2px solid red;
+                position:absolute;
+                width: 200px;
+                top:200%;
+                left:29px
+            }
+            #google{
+                position:absolute;
+                top:60%;
+                left:50%;
+            }
+            /* redtext class */
+            .redtext{color:rgb(218, 65, 19);}
+            .green{color:aquamarine}
+            /* to style a child link of a paragraph */
+            p>a:visited{
+                color:rgb(132, 0, 255);
+            }
+        </style>p tage become new color
         <title>
             first web title
         </title>
@@ -57,24 +114,25 @@
             NGOs
         </h6>
         search the NGOs near you
-        <p>
+        <p class="redtext">
             <a href= "login.html">login </a>  <!-- as long as in same folder-->
+        to use the website
         </p>
-        <p>
+        <p >
             <em>recent news:</em>
             
             <a href="http://www.pflag.org.cn/" title="LGBTQ NGO"><strong>PFLAG China</strong></a>
         </p>
 
-        <p><a name="meetup"></a>the meetups near you</p>
-        <p>Chunyu meetings locally Chunyu meetings locallyChunyu meetings locallyChunyu meetings locallyChunyu meetings locally
+        <p ><a name="meetup"></a>the meetups near you</p>
+        <p class="green"> <span>Chunyu meetings</span> locally Chunyu meetings locallyChunyu meetings locallyChunyu meetings locallyChunyu meetings locally
             Chunyu meetings locallyChunyu meetings locally</p>
 
         <a href="http://www.google.com"><img src = "PitzerHeadshot.jpg" height="150
             "/></a>
         <a href="mailto:yzhang@students.pitzer.edu">Email Yun</a>
 
-        <table border="1" width="11%" cellpadding="10"> <!-- table line, 11% of the width of the windows, and padd space around text, --> 
+        <table > <!--border="1" width="11%" cellpadding="10" table line, 11% of the width of the windows, and padd space around text, --> 
             <tr></tr><!-- table row 1-->
                 <th>name</td> <!-- table head column 1-->
                 <th>next move</th>
@@ -96,6 +154,18 @@
             <li>bullet point 2</li>
             <li>bullet point 3</li>
         </ol>
+
+        <div>my name is Yunn</div>
+        <div id="google">google search
+            <img src = "PitzerHeadshot.jpg" height="150"/>
+
+        </div>
+
+        <div id ="resume">
+            <h3>Yun Zhang</h3>
+            <p>yzhang@students.pitzer.edu  | (909)-962-9370</p>
+            <p><a href="https://github.com/yuzhangClaremont"></a></p>
+        </div>
     </body>
 
 </html>
