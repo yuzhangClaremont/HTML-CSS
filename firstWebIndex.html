@@ -155,17 +155,68 @@
             <li>bullet point 3</li>
         </ol>
 
-        <div>my name is Yunn</div>
+        <!-- <div>my name is Yunn</div>
         <div id="google">google search
             <img src = "PitzerHeadshot.jpg" height="150"/>
 
-        </div>
+        </div> -->
 
-        <div id ="resume">
+        <!-- <div id ="resume">
             <h3>Yun Zhang</h3>
             <p>yzhang@students.pitzer.edu  | (909)-962-9370</p>
             <p><a href="https://github.com/yuzhangClaremont"></a></p>
-        </div>
+        </div> -->
+
+    <form>
+        <!-- use name to differenentiate boxs -->
+        <!-- maxlength limit text inputed
+        value: the default text inside -->
+        Username:<input type="text" name="username" size="30" maxlength="3" value="Enter your name"/>
+        male:<input type="radio" name="sex" value="male" > 
+        <!-- the value will be stored in database -->
+        female:<input type="radio" name="sex" value="female">
+        <!-- male female has same name, so browser know in same group, so can only
+        slect one -->
+ 
+        <p>select the food you want</p>
+
+        Bacon <input type="checkbox" name="food" value="bacon">
+        ham<input type="checkbox" name="food" value="ham">
+        tuna <input type="checkbox" name="food" value="tuna">
+
+ 
+    </form>
+
+    <form>
+        what do you want to do?
+            <select name="activities">
+                    <option value="guitar"> play guitar </option>
+                    <option value="tennis"> play tennis </option>
+                    <option value="swim"> go swimming </option>
+                </select>
+    </form>
+
+    <form>
+        tell me yourself:
+        <br/>
+        <textarea name="bio" rows="4" cols="60">
+            your bio
+        </textarea>
+    </form>
+
+    <form action="dosomething" method="post">
+        password:<input type="password" name="pw"/>
+        <p>now submit a file</p>
+        <input type ="file" name="userfile"/>
+        <br/>
+            <form>
+        password:<input type="password" name="pw"/>
+        <p>now submit a file</p>
+        <input type ="file" name="userfile"/>
+        <br/>
+        <input type="submit" value="submit the file"/>
+        <!-- submit create a button, value is the text on it -->
+    </form>
     </body>
 
 </html>

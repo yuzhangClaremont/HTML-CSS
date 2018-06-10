@@ -7,18 +7,19 @@
         <style type="text/css">
 
             body{
-                position: absolute;
+                /* position: absolute;
                 width: 100%;
-                height: 90%;
+                height: 90%; */
                 background-image: url("sm.jpg");
                 background-size: 100%;
                 background-repeat: no-repeat;
             }
             #intro{
+                /* border: 2px black solid; */
                 text-align:center;
                 position: absolute;
-                left:30%;
-                right:30%;
+                left:15%;
+                right:15%;
                 top:500px;
                 color:rgb(122, 28, 28);
                 font-family: Georgia;
@@ -30,14 +31,24 @@
                 color:black;
             }
             #edu{
-                border: 2px solid red;
+                /* border: 2px solid red; */
                 position: absolute;
-                top:850px;
+                top:800px;
             }
             #edutext{
-                border: 2px solid red;
-                /* position: absolute; */
-                /* left:30px; */
+                /* border: 2px solid red; */
+                position: absolute; 
+                left:350px;
+                top:800px;
+                font-family:Tahoma;
+            }
+            #pad{
+                border: 2px black solid;
+                padding-left: 30px;
+            }
+            .tab2{
+                /* text-indent: 25px; */
+                padding-left: 170px;
             }
         </style>
 
@@ -63,17 +74,20 @@
         </div>
 
         <div id ="edu">
-            <img src="PitzerHeadshot.jpg" height="250"/>
-            <div id="edutext">
-                <h4>Education</h4>
-                    <p id="eduintro">After graduated from high school in Kunming, China, I went to Sun Yat-sen University to 
-                            persuit my higher education, and I studied French, Math, and Physics in Sino-French Nuclear Engineering School. However, I believe in the value of liberal arts education
-                            and I wanted to explore more knowledge before I become an expert in a field. So I choose to come to Pitzer, and I have explored knowledge in Psychology, 
-                            Economics, Computer Science, Political Studies, Gender Studies, Arts, and I spent one year to conduct Social Psychology researches with <a href="https://www.pomona.edu/directory/people/adam-pearson">Prof. Pearson</a>.
-                            and in the end, I became a Computer Science and Mathematical Economics major who is trying to become expert in both technology and business fields.
-                        </p>
-            </div>
-            
+            <img src="PitzerHeadshot.jpg" height="250"/>        
+        </div>
+        <div id="edutext">
+            <h4>Education</h4>
+            <p id="eduintro">After graduated from high school in Kunming, China, I went to <a href="https://en.wikipedia.org/wiki/Sun_Yat-sen_University">Sun Yat-sen University</a>  to 
+                    persuit my higher education, and I studied French, Math, and Physics in Sino-French Nuclear Engineering School. However, I believe in the value of liberal arts education
+                    and I wanted to explore more knowledge before I become an expert in a field. So I choose to come to Pitzer, and I have explored knowledge in Psychology, 
+                    Economics, Computer Science, Political Studies, Gender Studies, Arts, and I spent one year to conduct Social Psychology researches with <a href="https://www.pomona.edu/directory/people/adam-pearson">Prof. Pearson</a>.
+                    and in the end, I became a Computer Science and Mathematical Economics major who is trying to become expert in both technology and business fields.
+            </p>
+            <!-- <p> <strong>Pitzer College</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Computer Science & Mathematical Economics
+                 <div id="pad"> </div>3.8/4.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2015-2019 </p> -->
+            <p> <strong>Pitzer College</strong> <span class="tab2">Computer Science & Mathematical Economics</span> <span class="tab2"> 3.8/4.0</span> <span class="tab2"> 2015-2019</span>
+             </p>
         </div>
         
     </body>

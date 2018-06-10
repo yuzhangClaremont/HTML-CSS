@@ -100,6 +100,15 @@ resize image
 <a href="http://www.google.com"><img src = "PitzerHeadshot.jpg" height="150
     "/></a>
 ```
+
+max image size (or min size)
+```
+<style type="text/css">
+    img {max-height: 200px;
+        max-width:200px;}
+</style>
+
+```
 ## table
 ```
 <table border=".1"> <!-- table line-->
@@ -126,6 +135,73 @@ resize image
     <li>bullet point 3</li>
 </ol>
 ```
+
+## form
+```
+    <form>
+        <!-- use name to differenentiate boxs -->
+        <!-- maxlength limit text inputed
+        value: the default text inside -->
+        Username:<input type="text" name="username" size="30" maxlength="3" value="Enter your name"/>
+        male:<input type="radio" name="sex" >
+        female:<input type="radio" name="sex" value="female">
+        <!-- male female has same name, so browser know in same group, so can only
+        slect one -->
+``` 
+
+checkbox
+```
+        <p>select the food you want</p>
+
+        Bacon <input type="checkbox" name="food" value="bacon">
+        ham<input type="checkbox" name="food" value="ham">
+        tuna <input type="checkbox" name="food" value="tuna">
+```
+
+dropbox
+```
+    <form>
+        what do you want to do?
+            <select name="activities">
+                    <option value="guitar"> play guitar </option>
+                    <option value="tennis"> play tennis </option>
+                    <option value="swim"> go swimming </option>
+                </select>
+    </form>
+```
+
+text area
+```
+    <form>
+        tell me yourself:
+        <br/>
+        <textarea name="bio" rows="4" cols="60">
+            your bio
+        </textarea>
+    </form>
+```
+
+password and file upload
+```
+    <form>
+        password:<input type="password" name="pw"/>
+        <p>now submit a file</p>
+        <input type ="file" name="userfile"/>
+    </form>
+```
+you have to use javascript to upload multiple files 
+
+submit
+```
+    <form action="dosomething" method="post">
+   
+        <br/>
+        <input type="submit" value="submit the file"/>
+        <!-- submit create a button, value is the text on it -->
+    </form>
+```
+
+
 ## Span to affect part of text
 ```
 <p> <span>Chunyu meetings</span> locally Chunyu meetings locallyChunyu meetings locallyChunyu meetings locallyChunyu meetings locally
@@ -222,6 +298,12 @@ body{
         border-style: groove;
         border-top-style: inherit;
 ```
+## position
+absolute: free control from left top corner
+relative: top, left relative from original position
+outside box relative, inside box absolute
+fix: element stay in same place when screening
+
 # Style sheet
 in folder create .css file
 
@@ -229,4 +311,6 @@ then in every page of HTML's head out side style tag
 ```
 <link rel="stylesheet" type = "text/css" href="filename.css"/>
 ```
+
+# post web site
 
