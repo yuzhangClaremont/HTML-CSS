@@ -314,3 +314,216 @@ then in every page of HTML's head out side style tag
 
 # post web site
 
+
+# Javascript
+
+
+# comments
+```
+// comments here
+```
+
+```
+/*
+multiline 
+comments
+*/
+```
+
+# basic statements
+
+## print
+```
+document.write("something here");
+```
+
+## function
+define and run
+```
+function funky(){
+    alert("ouch")
+}
+
+funky();
+```
+
+button elicit function
+```
+<script type="text/javascript">
+    document.write("javascript testing");
+
+    function funky(){
+    alert("ouch")
+    }
+</script>
+<form>
+    <input type="button" value = "botton text" onclick="funky()"/>
+</form>
+</body>
+```
+## if statement
+```
+        var apples = 34;
+        var hotdog =53;
+
+        if (apples == 34){
+            document.write("it works");
+        }
+        else{
+
+        }
+```
+
+and: &&
+or: ||
+## switch
+```
+var girl = "natalie"
+switch(girl){
+    case "natalie":
+    document.write("hey natalie");
+    break;
+    case "ashley":
+    document.write("hey ashley");
+    break;
+    default:
+    document.write("default choice");
+}
+```
+## for loop
+```
+for (x=0; x<3;x++){
+    document.write(x+"<br/>hello<br/>");
+}
+```
+do ... while loop
+```
+var x = 5;
+do{
+    document.write("<br/>"+x+"hello");
+    x++;
+}while(x<10);
+```
+# variable
+```
+var x =23;
+```
+
+strings
+```
+var s = "\"hello world\"";
+document.write(s);
+```
+\ escape sign
+
+```
+var b = true;
+document.write(b);
+
+var n = null;
+document.write(n);
+
+
+```
+
+# event handler
+
+## onClick
+```
+<form>
+    <!-- onClick is event handler, with javascript code inside, use single quote forstring -->
+    <input type="button" value="touch me" onClick=
+    "alert('hahahah');
+    alert('hahahah x 2');"
+    />
+</form>
+```
+
+## onMouseOver
+```
+<a href="http://google.com" onMouseOver="alert('gametime');">google</a>
+```
+## onMouseOut
+```
+<a href="http://google.com" onMouseOut="alert('gametime');">google</a>
+```
+
+## onLoad
+```
+<body onLoad="alert('webpage finished loaded');">
+</body>
+```
+
+## onUnload not working?
+```
+<body onUnload="alert('goodbye');">
+```
+
+# Object
+
+string object
+```
+var tuna = "this is a tuna";
+document.write("<br/>tuna length:"+tuna.length);
+```
+
+Constructor
+```
+<head>
+    <script type="text/javascript">
+    // person constructor function
+        function person (name, age){
+            this.names = name;
+            this.Age = age;
+        }
+
+        var host = new person("Yun", 27);
+    </script>
+
+</head>
+```
+
+use object
+```
+<body onUnload="alert('goodbye');">
+    
+<script type="text/javascript">
+    document.write(host.Age);
+.
+.
+```
+
+Object initializer, faster than constructor
+
+in head script tag
+```
+ guest = {name:"David", age:26};
+ ```
+
+ methods
+ ```
+     <script type="text/javascript">
+    // person constructor function
+        function person (name, age){
+            this.names = name;
+            this.Age = age;
+            // bornyear is function but no perameter
+            this.bornYear = bornyear;
+
+        }
+    // person function return born year
+        function bornyear(){
+            var bornyear = 2018-this.Age;
+            return bornyear;
+        }
+
+        var host = new person("Yun", 27);
+```
+
+use method
+```
+<body onUnload="alert('goodbye');">
+    
+<script type="text/javascript">
+    document.write(host.bornYear()+"<br/>");
+```

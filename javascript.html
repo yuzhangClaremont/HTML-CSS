@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <script type="text/javascript">
+    // person constructor function
+        function person (name, age){
+            this.names = name;
+            this.Age = age;
+            // bornyear is function but no perameter
+            this.bornYear = bornyear;
+
+        }
+    // person function return born year
+        function bornyear(){
+            var bornyear = 2018-this.Age;
+            return bornyear;
+        }
+
+        var host = new person("Yun", 27);
+
+        guest = {name:"David", age:26};
+    </script>
+
+</head>
+
+<body onUnload="alert('goodbye');">
+    
+<script type="text/javascript">
+    document.write(host.bornYear()+"<br/>");
+
+    document.write(host.Age);
+    document.write("<br/>"+guest.name);
+
+// <!--
+    document.write("hey now");
+//-->
+
+var x = -23.098;
+document.write(x);
+
+var s = "\"hello world\"";
+document.write(s);
+
+var b = true;
+document.write(b);
+
+var n = null;
+document.write(n);
+
+function funky(){
+    alert("ouch")
+}
+
+
+
+var apples = 31;
+        var hotdog =53;
+
+        if (apples == 31){
+            document.write("it works");
+        }
+        else{
+            funky();
+        }
+
+// <br/>
+var girl = "natalie"
+switch(girl){
+    case "natalie":
+    document.write("<br/>hey natalie");
+    break;
+    case "ashley":
+    document.write("hey ashley");
+    break;
+    default:
+    document.write("default choice");
+}
+
+for (x=0; x<3;x++){
+    document.write(x+"<br/>hello<br/>");
+}
+
+var x = 5;
+do{
+    document.write("<br/>"+x+"hello");
+    x++;
+}while(x<10);
+
+var tuna = "this is a tuna";
+document.write("<br/>tuna length:"+tuna.length);
+</script>
+
+<form>
+    <!-- onClick is event handler, with javascript code inside, use single quote forstring -->
+    <input type="button" value="touch me" onClick=
+    "alert('hahahah');
+    alert('hahahah x 2');"
+    />
+</form>
+
+<a href="http://google.com" onMouseOut="alert('gametime');">google</a>
+
+</body>
+
+</html>
