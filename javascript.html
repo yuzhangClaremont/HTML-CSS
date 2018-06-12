@@ -26,8 +26,44 @@
 </head>
 
 <body onUnload="alert('goodbye');">
+
     
 <script type="text/javascript">
+// question and default text
+    var pie = prompt("Enter your name:","defalt text");
+    document.write("hello ", pie);
+
+    var people = new Array("name1","Mike","Amy");
+
+    //reverse array
+    people.reverse();
+
+    // push
+    people.push("1","2","3");
+
+    //sort in alphebet order
+    people.sort();
+    document.write("<br/>",people,"<br/>")
+
+
+    document.write(people[2])
+
+    var things = new Array(3);
+    things[0] = "kunming";
+
+    // size can be not fixed!!
+    var a = new Array();
+    a[0] = 0;
+    a[13] =13;
+    document.write(a[2], a[13], a.length,a,"<br/>"); // undefined,0,,,,,,,,,,,,,13, 13
+
+    // join array to string
+    var string1 =  people.join('+');
+    document.write(string1,"<br/>");
+    // pop out last element of array
+    document.write(people.pop(),"<br/>",people,"<br/>");
+
+
     document.write(host.bornYear()+"<br/>");
 
     document.write(host.Age);

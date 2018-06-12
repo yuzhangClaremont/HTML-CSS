@@ -337,6 +337,13 @@ comments
 document.write("something here");
 ```
 
+## prompt
+```
+// question and default text
+    var pie = prompt("Enter your name:","defalt text");
+    document.write("hello ", pie);
+```
+
 ## function
 define and run
 ```
@@ -526,4 +533,63 @@ use method
     
 <script type="text/javascript">
     document.write(host.bornYear()+"<br/>");
+```
+# Data structure
+
+## Array
+```
+<script type="text/javascript">
+    var people = new Array("name1","Mike","Amy");
+
+    document.write(people[2])
+```
+
+```
+    var things = new Array(3);
+    things[0] = "kunming";
+
+// size can be not fixed!!
+    var a = new Array();
+    a[0] = 0;
+    a[13] =13;
+    document.write(a[2], a[13]); // undefined, 13
+```
+
+array lenth
+```
+a.lenth
+```
+
+concatenate
+```
+a.concat(b)
+```
+
+array join to string
+```
+// join array to string
+var string1 =  people.join('+');
+document.write(string1,"<br/>");
+```
+//reverse array
+```
+    //reverse array
+    people.reverse();
+```
+push
+```
+    people.push("1","2","3");
+```
+
+sort
+number> upper head> lower head
+```
+    //sort in alphebet order
+    people.sort();
+```
+
+pop out last element of array
+```
+    // pop out last element of array
+    document.write(people.pop(),"<br/>",people,"<br/>");
 ```
