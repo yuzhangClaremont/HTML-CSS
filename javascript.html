@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html>
@@ -29,6 +29,30 @@
 
     
 <script type="text/javascript">
+function printTime(){
+    var now = new Date();
+    var hours = now.getHours();
+    var mins = now.getMinutes();
+    var seconds = now.getSeconds();
+    document.write(hours+":"+mins+':'+seconds+"<br/>");
+}
+
+// date object
+function tuna(){
+    document.write("tuna <br/>");
+}
+// run this function every 1000ms
+// setInterval("printTime()",1000);
+
+// dict? Associative Array
+    var assoArray = new Array();
+    assoArray["key1"] = "value1";
+    assoArray["key2"] = "value2";
+    document.write(assoArray["key2"], "<br/>");
+
+// math object
+    var pi = Math.PI;
+    document.write(Math.E, "<br/>");
 // question and default text
     var pie = prompt("Enter your name:","defalt text");
     document.write("hello ", pie);
@@ -137,6 +161,39 @@ document.write("<br/>tuna length:"+tuna.length);
 </form>
 
 <a href="http://google.com" onMouseOut="alert('gametime');">google</a>
+
+<form name="login">
+    username: <input type="text" name="username"/>
+    password: <input type="password" name="ppassword"/>
+    <input type="submit" value="submit!"/>
+</form>
+<script type="text/javascript">
+    document.write(document.forms.length, "<br/>");// 2 forms in forms array
+    document.write(document.forms[1].length);// login form array has 3 elements
+    var x = document.forms[1]
+    var pw = document.forms[1].elements[1].name;// ppassword
+    var usern = document.login.username.name;
+    document.write(usern);
+</script>
+
+<!-- // form validation -->
+<form name="yunsForum">
+    <input type="checkbox" name="box"/>
+    <input type="button" value ="press me" onClick="validator()">
+</form>
+
+<script type="text/javascript">
+function validator(){
+    // true if checked, false else
+    if (document.yunsForum.box.checked){
+        alert("you sure check");
+    }
+    else{
+        alert("no you not checked yet");
+    }
+}
+</script>
+
 
 </body>
 

@@ -5,6 +5,8 @@ https://www.youtube.com/user/thenewboston
 
 http://www.w3school.com.cn/tags/tag_doctype.asp
 
+https://www.youtube.com/watch?v=VvB4gDYhcgo&list=PL46F0A159EC02DF82&index=39
+
 # tags
 <p> praragraph
 <img> image
@@ -534,6 +536,91 @@ use method
 <script type="text/javascript">
     document.write(host.bornYear()+"<br/>");
 ```
+
+## Math obejct
+```
+ document.write(Math.E, "<br/>");
+```
+pi
+```
+Math.PI;
+```
+
+sqrt
+```
+Math.sqrt(n);
+```
+
+## Date object
+grab current date and time
+
+```
+function printTime(){
+    var now = new Date();
+    var hours = now.getHours();
+    var mins = now.getMinutes();
+    var seconds = now.getSeconds();
+    document.write(hours+":"+mins+':'+seconds+"<br/>");
+}
+
+// date object
+function tuna(){
+    document.write("tuna <br/>");
+}
+// run this function every 1000ms
+setInterval("printTime()",1000);
+```
+# Form object, form validation and javascript
+```
+<form>
+    username: <input type="text"/>
+    password: <input type="password"/>
+    <input type="submit" value="submit!"/>
+</form>
+<script type="text/javascript">
+    document.write(document.forms.length, "<br/>");// 2 forms in forms array
+    document.write(document.forms[1].length);// login form array has 3 elements
+    var x = document.forms[1]
+</script>
+```
+access form element
+```
+<form name="login">
+    username: <input type="text" name="username"/>
+    password: <input type="password" name="ppassword"/>
+    <input type="submit" value="submit!"/>
+</form>
+<script type="text/javascript">
+    document.write(document.forms.length, "<br/>");// 2 forms in forms array
+    document.write(document.forms[1].length);// login form array has 3 elements
+    var x = document.forms[1]
+    var pw = document.forms[1].elements[1].name;// ppassword
+    var usern = document.login.username.name;
+    document.write(usern);
+</script>c
+```
+
+## form validation
+```
+<!-- // form validation -->
+<form name="yunsForum">
+    <input type="checkbox" name="box"/>
+    <input type="button" value ="press me" onClick="validator()">
+</form>
+
+<script type="text/javascript">
+function validator(){
+    // true if checked, false else
+    if (document.yunsForum.box.checked){
+        alert("you sure check");
+    }
+    else{
+        alert("no you not checked yet");
+    }
+}
+</script>
+```
+
 # Data structure
 
 ## Array
@@ -593,3 +680,14 @@ pop out last element of array
     // pop out last element of array
     document.write(people.pop(),"<br/>",people,"<br/>");
 ```
+
+## dictionary? associative array?
+associative array
+```
+// dict? Associative Array
+    var assoArray = new Array();
+    assoArray["key1"] = "value1";
+    assoArray["key2"] = "value2";
+    document.write(assoArray["key2"], "<br/>");
+```
+
